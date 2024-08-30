@@ -1,0 +1,5 @@
+Project name : Project Progress Tracker
+      Project description : A simple website featuring a table with two columns: 'Projects' and 'Progress'. The table will display project names and their corresponding progress status (e.g., pending, done, thinking, doing). This tool will help users track the status of various projects at a glance.
+      Project goal : The goal is to provide users with a clear, easy-to-use interface for tracking project progress. We aim to improve project management efficiency by offering a straightforward visual representation of project statuses. The core USP is simplicity and clarity in project status tracking.
+      Project branding style : Clean and professional look with a color scheme that's easy on the eyes. Perhaps using shades of blue to convey trust and efficiency.
+      

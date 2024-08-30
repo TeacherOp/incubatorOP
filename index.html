@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Progress Tracker</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "dark-blue": "#0B0C10",
+              "medium-blue": "#1F2833",
+              "light-gray": "#C5C6C7",
+              cyan: "#66FCF1",
+              teal: "#45A29E",
+            },
+            fontFamily: {
+              nunito: ["Nunito", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .bg-overlay {
+        background-color: rgba(11, 12, 16, 0.85);
+      }
+    </style>
+  </head>
+
+  <body
+    class="font-inter bg-[#f4f5ee] text-light-gray min-h-screen flex flex-col"
+  >
+    <!-- <header-component></header-component> -->
+
+    <main class="flex-grow container mx-auto px-4 py-8">
+      <div class="bg-white min-h-full p-8 rounded-lg">
+        <h1
+          class="text-4xl font-bold text-black mb-8 animate__animated animate__fadeInDown"
+        >
+          Project Progress Tracker
+        </h1>
+        <project-list
+          class="animate__animated animate__fadeIn animate__delay-1s"
+        ></project-list>
+      </div>
+    </main>
+
+    <footer-component></footer-component>
+
+    <!-- <script src="components/header-component.js"></script> -->
+    <!-- <script src="components/footer-component.js"></script> -->
+    <script src="components/project-list.js"></script>
+  </body>
+</html>
