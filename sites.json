@@ -22,6 +22,9 @@
         "name": "shipstation.ai",
         "url": "https://shipstation.ai",
         "progress": "Live",
+        "sold": true,
+        "priceInDollars": 2400,
+        "soldProofLink": "https://x.com/waahbete/status/1825893628679537145",
         "team": [
             {
                 "role": "CEO",
@@ -41,6 +44,9 @@
         "name": "MailerBro",
         "url": "https://MailerBro",
         "progress": "Live",
+        "sold": true,
+        "priceInDollars": 2400,
+        "soldProofLink": "https://x.com/NeelSeth7/status/1828681315363041568",
         "team": [
             {
                 "role": "CEO",
