@@ -1,8 +1,8 @@
 [
     {
-        "name": "dhooond.com",
-        "url": "https://dhooond.com",
-        "progress": "Live",
+        "name": "teacherop.com",
+        "url": "https://teacherop.com",
+        "progress": "Building 🛠️ ",
         "team": [
             {
                 "role": "CEO",
@@ -42,7 +42,7 @@
     },
     {
         "name": "MailerBro",
-        "url": "https://MailerBro",
+        "url": "https://MailerBro.com",
         "progress": "Live",
         "sold": true,
         "priceInDollars": 2400,
@@ -59,6 +59,25 @@
                 "name": "EmployerOP",
                 "linkedin": "https://www.linkedin.com/in/ptmaroct/",
                 "twitter": ""
+            }
+        ]
+    },
+    {
+        "name": "dhooond.com",
+        "url": "https://dhooond.com",
+        "progress": "Live",
+        "team": [
+            {
+                "role": "CEO",
+                "name": "Neel Seth",
+                "linkedin": "https://www.linkedin.com/in/neel-seth-323827138/",
+                "twitter": "https://x.com/NeelSeth7"
+            },
+            {
+                "role": "CTO",
+                "name": "Anuj Sharma",
+                "linkedin": "https://www.linkedin.com/in/ptmaroct/",
+                "twitter": "https://x.com/waahbete"
             }
         ]
     },
@@ -863,25 +882,6 @@
     {
         "name": "suttamar.com",
         "url": "https://suttamar.com",
-        "progress": "Started",
-        "team": [
-            {
-                "role": "CEO",
-                "name": "Neel Seth",
-                "linkedin": "https://www.linkedin.com/in/neel-seth-323827138/",
-                "twitter": ""
-            },
-            {
-                "role": "CTO",
-                "name": "Anuj Sharma",
-                "linkedin": "https://www.linkedin.com/in/ptmaroct/",
-                "twitter": ""
-            }
-        ]
-    },
-    {
-        "name": "teacherop.com",
-        "url": "https://teacherop.com",
         "progress": "Started",
         "team": [
             {
