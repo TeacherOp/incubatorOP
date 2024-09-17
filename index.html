@@ -127,39 +127,55 @@
 
   <main class="flex-grow container mx-auto px-4 py-12">
     <div class="flex flex-col md:flex-row justify-between items-center mb-12 space-y-6 md:space-y-0">
-      <div class="animate__animated animate__fadeInLeft text-center md:text-left">
-        <h1 class="text-4xl md:text-6xl font-bold mb-4">
-          <span class="text-black">Incubator</span><span class="animate-op">OP</span>
-        </h1>
-      </div>
-      <div
-        class="flex flex-wrap justify-center md:justify-end items-center space-x-2 md:space-x-4 animate__animated animate__fadeInRight">
-        <a href="https://daytimedrinking.club" target="_blank" rel="noopener noreferrer"
-          class="transition-transform duration-300 hover:scale-110 flex items-center">
-          <img src="dtdc.png" alt="Daytime Drinking Club" class="h-10 w-10 md:h-12 md:w-12 object-contain">
-        </a>
-        <a href="https://discord.gg/PZZEzDGWed" target="_blank" rel="noopener noreferrer"
-          class="neubrutalism bg-white text-black px-4 py-2 md:px-6 md:py-3 text-sm md:text-lg font-bold rounded hover:bg-[#5865F2] hover:text-white transition-colors duration-300 my-2 md:my-0">
-          Join our Discord
-        </a>
-        <a href="https://github.com/daytimedrinkingclub" target="_blank" rel="noopener noreferrer"
-          class="neubrutalism bg-white text-black px-4 py-2 md:px-6 md:py-3 text-sm md:text-lg font-bold rounded hover:bg-[#2da44e] hover:text-white transition-colors duration-300 my-2 md:my-0">
-          Star us on GitHub
-        </a>
+      <div class="animate__animated animate__fadeIn flex justify-between items-center w-full">
+        <div class="text-left">
+          <h1 class="text-4xl md:text-6xl font-bold">
+            <span class="text-black">Incubator</span><span class="animate-op">OP</span>
+          </h1>
+        </div>
+        <div class="flex space-x-4">
+          <a href="https://discord.gg/PZZEzDGWed" target="_blank" rel="noopener noreferrer"
+            class="neubrutalism bg-white text-black px-4 py-2 sm:px-6 sm:py-3 text-sm sm:text-base lg:text-lg font-bold rounded hover:bg-[#5865F2] hover:text-white transition-colors duration-300 text-center">
+            Join our Discord
+          </a>
+          <a href="https://github.com/daytimedrinkingclub" target="_blank" rel="noopener noreferrer"
+            class="neubrutalism bg-white text-black px-4 py-2 sm:px-6 sm:py-3 text-sm sm:text-base lg:text-lg font-bold rounded hover:bg-[#2da44e] hover:text-white transition-colors duration-300 text-center">
+            Star us on GitHub
+          </a>
+        </div>
       </div>
     </div>
-    <div class="mb-6">
-      <p class="text-sm md:text-base max-w-2xl text-gray-700 mb-4">
-        IncubatorOP is one of first Value Capital firm where a group of 350+ talented developers, designers, product &
-        marketing folks invest their value in form of time as well as technology. We help people who want to build
-        and get started on their founder journey with minimal risk at record time to go live.
-      </p>
-      <p class="text-sm md:text-base max-w-2xl text-gray-700">
-        IncubatorOP keeps 10% equity as a team in all the companies & the founder/CEO gets to keep 90% of the equity.
-      </p>
-    </div>
+    <div class="flex flex-col md:flex-row justify-between items-start space-y-6 md:space-y-0 md:space-x-6">
+      <div class="w-full md:w-1/2 mb-6 px-4 md:px-0">
+        <p class="text-sm sm:text-base lg:text-lg max-w-2xl mx-auto md:mx-0 text-gray-700 mb-4">
+          IncubatorOP is one of first Value Capital firm where a group of 350+ talented developers, designers, product &
+          marketing folks invest their value in form of time as well as technology. We help people who want to build
+          and get started on their founder journey with minimal risk at record time to go live.
+        </p>
+        <p class="text-sm sm:text-base lg:text-lg max-w-2xl mx-auto md:mx-0 text-gray-700">
+          IncubatorOP keeps 10% equity as a team in all the companies & the founder/CEO gets to keep 90% of the equity.
+        </p>
 
-    <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center">Portfolio</h2>
+      </div>
+      <div class="w-full md:w-1/2 animate__animated animate__fadeInRight">
+        <div class="neubrutalism bg-white p-6 rounded-lg max-w-sm mx-auto md:ml-auto">
+          <h2 class="text-2xl font-bold mb-2">Hire IncubatorOP</h2>
+          <p class="text-gray-700 mb-4">Get expert help to accelerate your startup journey.</p>
+          <a href="#"
+            class="neubrutalism bg-poppy-blue text-white px-4 py-2 rounded font-bold hover:bg-poppy-red transition-colors duration-300 inline-block">
+            Schedule a Call
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col items-center mb-8">
+      <div class="flex items-center">
+        <h2 class="text-3xl md:text-4xl font-bold mr-4">Portfolio</h2>
+        <span class="inline-flex items-center bg-poppy-red text-white text-sm px-3 py-1 rounded-full neubrutalism">
+          96 projects
+        </span>
+      </div>
+    </div>
     <div id="project-list"
       class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 animate__animated animate__fadeIn animate__delay-1s">
       <!-- Project cards will be dynamically added here -->
