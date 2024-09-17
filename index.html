@@ -84,11 +84,41 @@
       opacity: 0.5;
       animation: subtle-pulse 2s infinite reverse;
     }
+
+    .loader-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    .loader {
+      border: 8px solid #f3f3f3;
+      border-top: 8px solid #FF3366; /* poppy-red */
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
   </style>
   <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
 </head>
 
 <body class="font-inter bg-poppy-yellow-10 text-black min-h-screen flex flex-col">
+  <div id="loader" class="loader-container">
+    <div class="loader"></div>
+  </div>
+
   <main class="flex-grow container mx-auto px-4 py-12">
     <div class="flex flex-col md:flex-row justify-between items-center mb-12 space-y-6 md:space-y-0">
       <div class="animate__animated animate__fadeInLeft text-center md:text-left">
@@ -133,6 +163,9 @@
     const supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY)
 
     async function loadProjects() {
+      const loader = document.getElementById('loader');
+      loader.style.display = 'flex'; // Show loader
+
       const { data: projects, error } = await supabaseClient
         .from('Products')
         .select(`
@@ -151,6 +184,7 @@
 
       if (error) {
         console.error('Error fetching projects:', error)
+        loader.style.display = 'none'; // Hide loader on error
         return
       }
 
@@ -163,6 +197,7 @@
 
       if (ctoError) {
         console.error('Error fetching CTO data:', ctoError)
+        loader.style.display = 'none'; // Hide loader on error
         return
       }
 
@@ -231,6 +266,8 @@
         `;
         projectList.appendChild(card);
       });
+
+      loader.style.display = 'none'; // Hide loader when done
     }
 
     document.addEventListener("DOMContentLoaded", loadProjects);
